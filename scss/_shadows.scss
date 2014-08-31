@@ -1,0 +1,20 @@
+&#shadows {
+    position: absolute;
+    width: 100%;
+    top: 300px;
+    white-space: nowrap;
+
+    img {
+        opacity: 0;
+        margin-right: -125px;
+        @include transition(opacity $transition-duration $speed-timing-function);
+
+        &:last-of-type {
+            margin-right: 0;
+        }
+
+        &.displayed {
+            opacity: 1;
+        }
+    }
+}

@@ -1,0 +1,268 @@
+@import url(http://fonts.googleapis.com/css?family=Pacifico);
+/* line 5, ../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 3, ../scss/default.scss */
+body {
+  background: #4496ce;
+  overflow-x: hidden;
+}
+/* line 7, ../scss/default.scss */
+body > h1 {
+  position: absolute;
+  top: -99999px;
+}
+/* line 12, ../scss/default.scss */
+body p {
+  text-align: center;
+}
+/* line 15, ../scss/default.scss */
+body p img {
+  vertical-align: top;
+}
+/* line 2, ../scss/_letters.scss */
+body p#letters img {
+  margin-top: -470px;
+  position: relative;
+  top: 0;
+  z-index: 2;
+  -moz-transition: margin-top 2s ease-in-out, top 0.2s ease-out;
+  -o-transition: margin-top 2s ease-in-out, top 0.2s ease-out;
+  -webkit-transition: margin-top 2s ease-in-out, top 0.2s ease-out;
+  transition: margin-top 2s ease-in-out, top 0.2s ease-out;
+}
+/* line 9, ../scss/_letters.scss */
+body p#letters img.displayed {
+  margin-top: 0;
+}
+/* line 12, ../scss/_letters.scss */
+body p#letters img.displayed:hover {
+  top: -50px;
+}
+/* line 16, ../scss/_letters.scss */
+body p#letters img.displayed:active {
+  top: 0;
+}
+/* line 1, ../scss/_shadows.scss */
+body p#shadows {
+  position: absolute;
+  width: 100%;
+  top: 300px;
+  white-space: nowrap;
+}
+/* line 7, ../scss/_shadows.scss */
+body p#shadows img {
+  opacity: 0;
+  margin-right: -125px;
+  -moz-transition: opacity 2s ease-in-out;
+  -o-transition: opacity 2s ease-in-out;
+  -webkit-transition: opacity 2s ease-in-out;
+  transition: opacity 2s ease-in-out;
+}
+/* line 12, ../scss/_shadows.scss */
+body p#shadows img:last-of-type {
+  margin-right: 0;
+}
+/* line 16, ../scss/_shadows.scss */
+body p#shadows img.displayed {
+  opacity: 1;
+}
+/* line 1, ../scss/_punch.scss */
+body p#punch {
+  position: absolute;
+  width: 100%;
+  top: 500px;
+  font-size: 72px;
+  color: #E0F2F9;
+  font-family: 'Pacifico', serif;
+  opacity: 0;
+  cursor: default;
+  -moz-transition: opacity 2s ease-in-out;
+  -o-transition: opacity 2s ease-in-out;
+  -webkit-transition: opacity 2s ease-in-out;
+  transition: opacity 2s ease-in-out;
+}
+/* line 12, ../scss/_punch.scss */
+body p#punch.displayed {
+  opacity: 1;
+}
+/* line 1, ../scss/_mail.scss */
+body p#mail {
+  position: absolute;
+  width: 100%;
+  top: 600px;
+  font-size: 50px;
+  font-family: 'Pacifico', serif;
+  opacity: 0;
+  -moz-transition: opacity 2s ease-in-out;
+  -o-transition: opacity 2s ease-in-out;
+  -webkit-transition: opacity 2s ease-in-out;
+  transition: opacity 2s ease-in-out;
+}
+/* line 10, ../scss/_mail.scss */
+body p#mail a {
+  color: #8bcee8;
+  -moz-transition: color 0.5s ease;
+  -o-transition: color 0.5s ease;
+  -webkit-transition: color 0.5s ease;
+  transition: color 0.5s ease;
+}
+/* line 14, ../scss/_mail.scss */
+body p#mail a:hover {
+  color: white;
+}
+/* line 17, ../scss/_mail.scss */
+body p#mail a:hover:before, body p#mail a:hover:after {
+  opacity: 1;
+  width: 20px;
+}
+/* line 23, ../scss/_mail.scss */
+body p#mail a:before, body p#mail a:after {
+  display: inline-block;
+  width: 100px;
+  color: white;
+  opacity: 0;
+  -moz-transition: opacity 0.25s ease, width 0.25s ease;
+  -o-transition: opacity 0.25s ease, width 0.25s ease;
+  -webkit-transition: opacity 0.25s ease, width 0.25s ease;
+  transition: opacity 0.25s ease, width 0.25s ease;
+}
+/* line 32, ../scss/_mail.scss */
+body p#mail a:before {
+  content: '>';
+  text-align: left;
+}
+/* line 37, ../scss/_mail.scss */
+body p#mail a:after {
+  content: '<';
+  text-align: right;
+}
+/* line 43, ../scss/_mail.scss */
+body p#mail.displayed {
+  opacity: 1;
+}
+/* line 10, ../scss/_var.scss */
+body ::-moz-selection {
+  background: white;
+}
+/* line 11, ../scss/_var.scss */
+body ::selection {
+  background: white;
+}
+
+@media screen and (max-width: 1118px) {
+  /* line 2, ../scss/_mediaqueries.scss */
+  body {
+    zoom: 0.9;
+  }
+}
+@media screen and (max-width: 1008px) {
+  /* line 8, ../scss/_mediaqueries.scss */
+  body {
+    zoom: 0.8;
+  }
+}
+@media screen and (max-width: 881px) {
+  /* line 14, ../scss/_mediaqueries.scss */
+  body {
+    zoom: 0.7;
+  }
+}
+@media screen and (max-width: 771px) {
+  /* line 20, ../scss/_mediaqueries.scss */
+  body {
+    zoom: 0.6;
+  }
+}
+@media screen and (max-width: 661px) {
+  /* line 26, ../scss/_mediaqueries.scss */
+  body {
+    zoom: 0.5;
+  }
+}
+@media screen and (max-width: 551px) {
+  /* line 32, ../scss/_mediaqueries.scss */
+  body {
+    zoom: 0.4;
+  }
+}
+@media screen and (max-width: 441px) {
+  /* line 38, ../scss/_mediaqueries.scss */
+  body {
+    zoom: 0.3;
+  }
+}
+@media screen and (max-width: 331px) {
+  /* line 44, ../scss/_mediaqueries.scss */
+  body {
+    zoom: 0.2;
+  }
+}
+@media screen and (max-width: 221px) {
+  /* line 50, ../scss/_mediaqueries.scss */
+  body {
+    zoom: 0.1;
+  }
+}

@@ -1,0 +1,15 @@
+&#punch {
+    position: absolute;
+    width: 100%;
+    top: 500px;
+    font-size: 72px;
+    color: #E0F2F9;
+    font-family: 'Pacifico', serif;
+    opacity: 0;
+    cursor: default;
+    @include transition(opacity $transition-duration $speed-timing-function);
+
+    &.displayed {
+        opacity: 1;
+    }
+}

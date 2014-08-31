@@ -1,0 +1,46 @@
+&#mail {
+    position: absolute;
+    width: 100%;
+    top: 600px;
+    font-size: 50px;
+    font-family: 'Pacifico', serif;
+    opacity: 0;
+    @include transition(opacity $transition-duration $speed-timing-function);
+
+    a {
+        color: darken(#E0F2F9, 20%);
+        @include transition(color 0.5s ease);
+
+        &:hover {
+            color: white;
+
+            &:before, &:after {
+                opacity: 1;
+                width: 20px;
+            }
+        }
+
+        &:before, &:after {
+            display: inline-block;
+            width: 100px;
+            color: white;
+            opacity: 0;
+
+            @include transition(opacity 0.25s ease, width 0.25s ease);
+        }
+
+        &:before {
+            content: '>';
+            text-align: left;
+        }
+
+        &:after {
+            content: '<';
+            text-align: right;
+        }
+    }
+
+    &.displayed {
+        opacity: 1;
+    }
+}

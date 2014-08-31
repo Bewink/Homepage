@@ -1,0 +1,30 @@
+@import "var";
+
+body {
+    background: #4496ce;
+    overflow-x: hidden;
+
+    & > h1 {
+        position: absolute;
+        top: -99999px;
+    }
+
+    p {
+        text-align: center;
+
+        img {
+            vertical-align: top;
+        }
+
+        @import "letters";
+        @import "shadows";
+        @import "punch";
+        @import "mail";
+    }
+
+    @include selection {
+        background: white;
+    }
+}
+
+@import "mediaqueries";

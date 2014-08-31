@@ -1,0 +1,21 @@
+&#letters {
+    img {
+        margin-top: -$letters-height;
+        position: relative;
+        top: 0;
+        z-index: 2;
+        @include transition(margin-top $transition-duration $speed-timing-function, top 0.2s ease-out);
+
+        &.displayed {
+            margin-top: 0;
+
+            &:hover {
+                top: -50px;
+            }
+
+            &:active {
+                top: 0;
+            }
+        }
+    }
+}

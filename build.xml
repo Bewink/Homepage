@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project basedir="." name="Bewink" default="compile-compass">
+    <target name="compile-compass">
+        <exec executable="cmd" dir="." failonerror="true">
+            <arg line="/C compass compile ."/>
+        </exec>
+    </target>
+</project>
