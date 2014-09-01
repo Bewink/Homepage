@@ -12,5 +12,5 @@
 }
 
 $transition-duration: 2s;
-$speed-timing-function: ease-in-out;
+$speed-timing-function: cubic-bezier(.65, 1.95, .03, .32);
 $letters-height: 470px;

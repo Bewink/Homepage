@@ -88,10 +88,10 @@ body p#letters img {
   position: relative;
   top: 0;
   z-index: 2;
-  -moz-transition: margin-top 2s ease-in-out, top 0.2s ease-out;
-  -o-transition: margin-top 2s ease-in-out, top 0.2s ease-out;
-  -webkit-transition: margin-top 2s ease-in-out, top 0.2s ease-out;
-  transition: margin-top 2s ease-in-out, top 0.2s ease-out;
+  -moz-transition: margin-top 2s cubic-bezier(0.65, 1.95, 0.03, 0.32), top 0.2s ease-out;
+  -o-transition: margin-top 2s cubic-bezier(0.65, 1.95, 0.03, 0.32), top 0.2s ease-out;
+  -webkit-transition: margin-top 2s cubic-bezier(0.65, 1.95, 0.03, 0.32), top 0.2s ease-out;
+  transition: margin-top 2s cubic-bezier(0.65, 1.95, 0.03, 0.32), top 0.2s ease-out;
 }
 /* line 9, ../scss/_letters.scss */
 body p#letters img.displayed {
@@ -116,10 +116,10 @@ body p#shadows {
 body p#shadows img {
   opacity: 0;
   margin-right: -125px;
-  -moz-transition: opacity 2s ease-in-out;
-  -o-transition: opacity 2s ease-in-out;
-  -webkit-transition: opacity 2s ease-in-out;
-  transition: opacity 2s ease-in-out;
+  -moz-transition: opacity 2s cubic-bezier(0.65, 1.95, 0.03, 0.32);
+  -o-transition: opacity 2s cubic-bezier(0.65, 1.95, 0.03, 0.32);
+  -webkit-transition: opacity 2s cubic-bezier(0.65, 1.95, 0.03, 0.32);
+  transition: opacity 2s cubic-bezier(0.65, 1.95, 0.03, 0.32);
 }
 /* line 12, ../scss/_shadows.scss */
 body p#shadows img:last-of-type {
@@ -139,10 +139,10 @@ body p#punch {
   font-family: 'Pacifico', serif;
   opacity: 0;
   cursor: default;
-  -moz-transition: opacity 2s ease-in-out;
-  -o-transition: opacity 2s ease-in-out;
-  -webkit-transition: opacity 2s ease-in-out;
-  transition: opacity 2s ease-in-out;
+  -moz-transition: opacity 2s cubic-bezier(0.65, 1.95, 0.03, 0.32);
+  -o-transition: opacity 2s cubic-bezier(0.65, 1.95, 0.03, 0.32);
+  -webkit-transition: opacity 2s cubic-bezier(0.65, 1.95, 0.03, 0.32);
+  transition: opacity 2s cubic-bezier(0.65, 1.95, 0.03, 0.32);
 }
 /* line 12, ../scss/_punch.scss */
 body p#punch.displayed {
@@ -156,10 +156,10 @@ body p#mail {
   font-size: 50px;
   font-family: 'Pacifico', serif;
   opacity: 0;
-  -moz-transition: opacity 2s ease-in-out;
-  -o-transition: opacity 2s ease-in-out;
-  -webkit-transition: opacity 2s ease-in-out;
-  transition: opacity 2s ease-in-out;
+  -moz-transition: opacity 2s cubic-bezier(0.65, 1.95, 0.03, 0.32);
+  -o-transition: opacity 2s cubic-bezier(0.65, 1.95, 0.03, 0.32);
+  -webkit-transition: opacity 2s cubic-bezier(0.65, 1.95, 0.03, 0.32);
+  transition: opacity 2s cubic-bezier(0.65, 1.95, 0.03, 0.32);
 }
 /* line 10, ../scss/_mail.scss */
 body p#mail a {
